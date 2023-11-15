@@ -1,4 +1,3 @@
-import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { ClerkProvider } from '@clerk/nextjs';
 
@@ -9,11 +8,6 @@ import { cn } from '@/lib/utils';
 import '../styles/globals.css';
 
 const fontSans = Inter({ subsets: ['latin'] });
-
-export const metadata: Metadata = {
-  title: 'Remind App',
-  description: 'Fullstack reminder app with Nextjs',
-};
 
 export default function RootLayout({
   children,

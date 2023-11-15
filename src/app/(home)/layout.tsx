@@ -1,8 +1,14 @@
 import React from 'react';
+import { Metadata } from 'next';
 import { redirect } from 'next/navigation';
 import { currentUser } from '@clerk/nextjs';
 
 import { Navbar } from '@/components/Navbar';
+
+export const metadata: Metadata = {
+  title: 'Home - Remindme',
+  description: 'Fullstack reminder app with Nextjs',
+};
 
 export default async function RouteLayout({
   children,
